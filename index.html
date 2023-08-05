@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeStore - Shoes</title>
+    <link rel="icon" type="image/x-icon" href="assets/Images/Logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/Styles/Ecommerce.css">
+    <!-- slider1 -->
+    <link rel="stylesheet" href="assets/Styles/slider1.css">
+    <!-- slider2 -->
+    <link rel="stylesheet" href="assets/Styles/slider2.css">
+    <!-- slider3 -->
+    <link rel="stylesheet" href="assets/Styles/slider3.css">
+    <!-- slider4 -->
+    <link rel="stylesheet" href="assets/Styles/slider4.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/Styles/glider.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="assets/Styles/form.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets\Images\logo.png" alt="logo">
+            </div>
+            <ul class="nav-list">
+                <li><a class="textfont" title="Inicio" href="#inicio">Inicio</a></li>
+                <li><a class="textfont" title="Lançamentos" href="#lançamento">Lançamentos</a></li>
+                <li><a class="textfont" title="Imagens de jogos" href="#imagens">Imagens</a></li>
+                <li><a class="textfont" title="Produtos" href="#produto">Produtos</a></li>
+                <li><a class="textfont" title="Avaliações" href="#avaliacao">Avaliações</a></li>
+                <li><a class="textfont" title="Fale Conosco" href="#form-title">Fale Conosco</a></li>
+                <div class="search">
+                    <input type="text" placeholder="Busca..." class="searchInput">
+                    <button class="searchButton" aria-label="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="cart">
+                    <img src="assets\Images\cart2.png" alt="Carrinho">
+                </div>
+            </ul>
+
+            <div class="mobile-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="background" id="inicio">
+            <div class="flex-container">
+                <div class="image-container">
+                    <img id="girl1" src="assets\Images\nikegirl_1.jpg" alt="Imagem da modelo com o nike Jordan">
+                </div>
+                <div class="background-name">
+                    <h1 class="frase1">New Season</h1>
+                    <h1 class="frase2">New Collection</h1>
+                    <img id="logo2" src="assets\Images\vb-removebg-preview__2_-removebg-preview.png" alt="Imagem Logo">
+                    <h1 class="frase3">Find comfort  for  your feet</h1>
+                </div>
+                <div class="image-container">
+                    <img id="girl2" src="assets\Images\nikegirl_2.jpg" alt="Imagem do personagem de vídeogames Sonic">
+                </div>
+            </div>
+        </div>
+        
+        <div class="fase1">
+            <section class="p-slider" aria-labelledby="destaque">
+                <!-- heading -->
+                <h2 class="titlefont" id="lançamento">Lançamentos</h2>
+
+                <!-- buttons -->
+                <div class="slider-btns">
+                    <button aria-label="Previous" class="glider-prev">
+                        <span></span>
+                    </button>
+                    <button aria-label="Next" class="glider-next">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="glider-contain">
+                    <div class="glider">
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$249,89</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$159,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$499,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$129,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$270,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$349,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="fase2">
+            <section aria-labelledby="imagens">
+                <h2 class="titlefont2" id="imagens">Imagens</h2>
+                <div class="slider-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/img_1.jpg.png" alt="Personagem Mario" class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Ex</h3>
+                                    <p class="textfont">Just do it!</p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/img_1.jpg.png" alt="Personagem Kratos" class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Ex</h3>
+                                    <p class="textfont">Just do it!.</p>
+                                </div>
+                            </div>
+                            <div class="card2 swiper-slide">
+                                <div class="imagecontent">
+                                    <div class="cardimg">
+                                        <img src="./assets/Images/Personagens/img_1.jpg.png" alt="Personagem Obi-Wan-Kenobi do filme Star Wars" class="img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name2">Ex</h3>
+                                    <p class="textfont">Just do it!.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+        <div class="fase3">
+            <section class="p-slider" aria-labelledby="produto">
+                <!-- heading -->
+                <h2 class="titlefont3" id="produto">Produtos</h2>
+
+                <!-- buttons -->
+                <div class="slider-btns2">
+                    <button aria-label="Previous" class="glider2-prev">
+                        <span></span>
+                    </button>
+                    <button aria-label="Next" class="glider2-next">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="glider-contain">
+                    <div class="glider2">
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$299,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$159,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Nike</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$499,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1196,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$3520,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$899,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Xbox Series">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Console</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$2249,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$349,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$329,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" p-img-front alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Eletrônico</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$249,89</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg class="p-img-front"
+                                            alt="Nike">
+
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$270,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" p-img-front"
+                                            alt="Tenis">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="Tenis">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$319,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$345,00</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$249,89</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Game</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$245,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
+                                            alt="Nike">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tenis</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$129,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="fase4">
+            <section aria-labelledby="avaliação">
+                <h2 class="titlefont4" id="avaliacao">Avaliações</h2>
+                <div class="slider-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Julia</h2>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Emma</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Lucas</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/
+                                            alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">André</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Fernanda</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Bruna</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Samuel</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">John</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Gabriel</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+        <div class="fase5">
+            <section  aria-labelledby="FaleConosco">
+                <h2 class="titlefont5" id="FaleConosco">Fale conosco</h2>
+                <div class="form-container">
+                    <div id="form-title">
+                    </div>
+                    <form action="https://formsubmit.co/ajax/juliagomes1676@gmail.com" method="POST">
+                        <div class="form-field">
+                            <label class= "form-section" for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome aqui" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label class= "form-section" for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Email aqui" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label class= "form-section" for="assunto">Assunto:</label>
+                            <input class= "form-assunto" type="assunto" name="assunto" id="assunto" placeholder="Assunto aqui" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label class= "form-section" for="mensagem">Mensagem:</label>
+                            <textarea name="mensagem" id="mensagem" placeholder="Mensagem aqui" required></textarea>
+                        </div>
+
+                        <button class="prettyButton" type="send">Enviar</button>
+                    </form>
+                </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="contacts">
+                    <h3 class="nosencontre">Nos encontre também em:</h3>
+                    <div class="social-media">
+                        <a href='https://api.whatsapp.com/send?phone=5537988110926' class="footer-link whatsapp"
+                            target='_blank' alt="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/julsgomes/" class="footer-link instagram" target='_blank'
+                            alt="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="footer-link email"
+                            href="mailto:juliagomes1676@gmail.com?subject=Gostaria de fazer um orçamento&&body=Estou Interessado em alguns de seus produtos"
+                            alt="email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        <a class="footer-link map"
+                            href="https://www.google.com/maps/place/Instituto+de+Ci%C3%AAncias+Exatas+e+Aplicadas+-+ICEA%2FUFOP/@-19.8360858,-43.1701626,17z/data=!4m6!3m5!1s0xa507511efdbbd3:0x55a7ef3c198b9753!8m2!3d-19.8361918!4d-43.1677057!16s%2Fg%2F1tf172_b?entry=ttu"
+                            alt="localizacao no google maps">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    &#169
+                    2023 all rights reserved
+                </div>
+            </div>
+        </footer>
+
+        </div>
+        <!-- Swiper JS -->
+        <script src="assets/Scripts/unpkg.com_swiper@8.1.6_swiper-bundle.min.js"></script>
+        <script src="assets/Scripts/glider.min.js"></script>
+
+
+        <!-- JavaScript -->
+        <!-- slider1 -->
+        <script src="assets/Scripts/slider1.js"></script>
+
+        <!-- slider3 -->
+        <script src="assets/Scripts/slider3.js"></script>
+        <!-- slider4 -->
+        <script src="assets/Scripts/slider4.js"></script>
+        <!-- darkmode button -->
+        <script src="assets/Scripts/8bits-mario-site.js"></script>
+        <!-- Responsivity navbar-->
+        <script src="assets/Scripts/Mobilenav.js"></script>
+        <!-- Descida suave do scroll-->
+        <script src="assets/Scripts/SmoothScroll.js"></script>
+        <script src="https://kit.fontawesome.com/4ba6cacfd0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

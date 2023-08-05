@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2Pma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+
+/* Configuração padrão da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins Light 300", sans-serif;
+}
+
+body {
+  position: relative;
+  /* Necessário para posicionar o pseudo-elemento */
+  margin: 0;
+  /* Remover margens padrão do body */
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  background-image: #ffffff;
+  background-size: 30px 30px;
+  opacity: 0.1;
+  /* Define a opacidade da imagem de plano de fundo */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Estilização da barra de navegação */
+.navbar {
+  display: flex;
+  background-color: #2D2D2D;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  padding: 0 34px;
+  z-index: 999;
+}
+
+/* Estilização da logo da barra de navegação */
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Estilização da lista de opções da barra de navegação */
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 32px;
+}
+
+.nav-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.nav-list li a:hover {
+  background-color: grey;
+  color: rgb(224, 211, 211);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+/* Estilização da caixa de busca */
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(244, 244, 244);
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-left: 153px;
+}
+
+.searchInput {
+  border: none;
+  background-color: transparent;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Estilização do ícone de menu responsivo */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 7px;
+  transition: 0.3s;
+}
+
+/* Media Query para telas menores que 1000px */
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ajuste na barra de navegação para se tornar um menu responsivo */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .nav-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-list li {
+    opacity: 0;
+    animation: navLinkFade 0.5s ease forwards;
+  }
+
+  /* Estilização do ícone do menu responsivo quando ativado */
+  .mobile-menu.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu.active .line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .mobile-menu.active .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  /* Animação para mostrar a lista de opções quando o menu responsivo é ativado */
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+/* Estilização do background inicial */
+.background {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#2D2D2D, #2D2D2D);
+  background-size: cover;
+  width: 100%;
+}
+
+.background-name {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  font-size: 16px;
+  font-family: "MontSerrat", "open sans";
+  color: white;
+  align-items: center;
+}
+
+.frase1 {
+  margin-left: 1.5vw;
+  font-size: 2.5vw;
+  font-weight: 200;
+  font-family: 'Shippori Mincho', serif;
+  color: white;
+  align-items: center;
+}
+
+.frase2 {
+  margin-left: 0vw;
+  font-size: 2.5vw;
+  font-weight: 200;
+  font-family: 'Shippori Mincho', serif;
+  color: white;
+  align-items: center;
+}
+
+.frase3 {
+  padding-top: 5px;
+  margin-left: 25px;
+  font-size: 1.2vw;
+  font-weight: 200;
+  font-family: 'Shippori Mincho', serif;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para diminuir a imagem */
+.image-container {
+  width: 54%;
+  position: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .background {
+    background-size: 50% 100%;
+  }
+
+  .background-name {
+    padding-top: 20;
+    font-size: 2vw;
+  }
+
+  .image-container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .background {
+    height: 60vh;
+  }
+
+  .background-name {
+    padding-top: 35vh;
+    font-size: 1.8vw;
+  }
+
+  .dark .background-name {
+    text-shadow: 2px 2px black;
+  }
+
+  .image-container {
+    width: 52%;
+  }
+}
+
+@media (max-width: 600px) {
+  .background {
+    background-size: 30% 100%;
+  }
+
+  .background-name {
+    font-size: 2vw;
+  }
+
+  .image-container {
+    width: 80%;
+    margin-left: 5vw;
+  }
+}
+
+@media (min-width: 3000px) {
+  #girl1 {
+    max-height: 35%;
+    width: 35%;
+  }
+
+  #girl2 {
+    max-height: 21%;
+    width: 21%;
+    position: relative;
+    margin-left: 40vw;
+    padding-left: 1vw;
+    padding-top: 8vh;
+    opacity: 0.5;
+    transition: opacity 1s;
+  }
+}
+
+/* Styles for the footer */
+footer {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Styles for the main content of the footer */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: #2D2D2D;
+  text-align: center;
+  padding-top: 2%;
+}
+
+/* Styles for the contacts section in the footer */
+.footer-contacts h3 {
+  margin-bottom: 0.75rem;
+}
+
+/* Styles for the social media links in the footer */
+.social-media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosencontre{
+  color: white;
+}
+
+.social-media .footer-link {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #4476ff;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.social-media .footer-link i {
+  font-size: 1.25rem;
+}
+
+.social-media .footer-link:hover {
+  opacity: 0.8;
+}
+
+/* Styles for the list in the footer */
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+/* Styles for the copyright section in the footer */
+.footer-copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Fale conosco*/
+.fale-conosco {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #313131;
+  text-align: center;
+  margin: 25px;
+}
+
+.titlefont-padding{
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #313131;
+  text-align: center;
+  margin: 25px;
+}
+
+.aria-labelledby{
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #313131;
+  text-align: center;
+  margin: 80px;
+}
+
+.cart img {
+  width: 35px;
+  display: flex;
+  align-items: left;
+  margin-left: 20px;
+}
