@@ -1,8 +1,8 @@
 from bd import mysql
 from flaskext.mysql import MySQL
-from flask import Flask, render_template, request, redirect, url_for  
+from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)      
+app = Flask(__name__, static_url_path='/assets', static_folder='assets')   
 
 #instanciar
 @app.route('/')                                                     #Criando o Rout
@@ -10,11 +10,11 @@ def homepage():                                                     #Criando a F
     return render_template("index.html")
 
 @app.route('/Login')                                                #Criando o Rout
-def homepageLogin():                                                #Criando a Função
+def Login():                                                #Criando a Função
     return render_template("login.html")
 
 @app.route('/Create')                                               #Criando o Rout
-def homepageRegister():                                             #Criando a Função
+def Register():                                             #Criando a Função
     return render_template("create.html")
 
 
