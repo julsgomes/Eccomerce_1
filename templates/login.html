@@ -87,7 +87,7 @@
 </head>
 <body>
 
-    <form action="{{ url_for('verificar_usuario') }}" method="post" onsubmit="return entrar()">
+    <form action="{{ url_for('verificar_usuario') }}" method="POST" onsubmit="return entrar()">
         <label>Faça login para continuar</label>
         <input type="email" name="email" placeholder="Usuário" />
         <input type="password" name="password" placeholder="Senha"/>
