@@ -1,12 +1,9 @@
 from bd import mysql
-from models.user import Usuario
 from flaskext.mysql import MySQL
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, jsonify, render_template, request, redirect, url_for
 
 app = Flask(__name__, static_url_path='/assets', static_folder='assets')
-
-user_global = Usuario()
-email_global = ""
+nome_usuario = ''
 
 #instanciar
 @app.route('/')                                                     #Criando o Rout
@@ -60,26 +57,11 @@ def verificar_usuario():
                     if(resultado[0][2] != senha):
                         return render_template("login.html")
                     else:
-                        email_global = resultado[0][1]
-                        return render_template("index.html")
+                        nome_usuario = resultado[0][1]
+                        return render_template("index.html", nome_usuario = nome_usuario)
 
         except Exception as e:
             return render_template("login.html")
-
-@app.route('/getUserByEmail', methods = ['GET'])
-def getUserByEmail():
-    args = request.args.get('email')
-    try:
-        with mysql.cursor() as cur:
-            comando = "SELECT * FROM Usuario WHERE	email = %s;"
-            cur.execute(comando, args)
-            resultado = cur.fetchall()
-            user_global.cria(resultado[0][0], resultado[0][1], resultado[0][2], resultado[0][3])
-            return 
-
-    except Exception as e:
-        print("Deu ruim")
-        return render_template("login.html")
 
 if(__name__ == "__main__"):
     app.run(debug = True)
