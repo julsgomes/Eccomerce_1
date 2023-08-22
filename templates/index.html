@@ -27,6 +27,8 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="assets/Styles/cart.css">
+
     <!-- Form CSS -->
     <link rel="stylesheet" href="assets/Styles/form.css">
 </head>
@@ -34,6 +36,7 @@
     <script>
         var nomeUsuario = "{{ nome_usuario }}";
 
+        
     </script>
 
     <header>
@@ -54,9 +57,51 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
+                <!-- Carrinho de compras -->
                 <div class="cart">
                     <img src="assets\Images\cart2.png" alt="Carrinho">
                 </div>
+                <div class="cart">
+                    <img class="cart-img" src="assets\Images\cart2.png" alt="Carrinho">
+
+                    <div class="cart-container">
+                        <div class="cart-top">
+                            <p>SEU CARRINHO (3)</p>
+                            <button class="cart-btn-close">X</button>
+                        </div>
+                        <div class="cart-body">
+                            <div class="cart-item-container">
+                                <img class="cart-item-img" src="assets/Images/Produtos/tenisw_.jpg" alt="">
+                                <div class="cart-item-text">
+                                    <p>Tênis</p>
+                                    <p>Tamanho: 41</p>
+                                    <p>1 unid.</p>
+                                    <p>R$ 399,99</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-container">
+                                <img class="cart-item-img" src="assets/Images/Produtos/tenisw_.jpg" alt="">
+                                <div class="cart-item-text">
+                                    <p>Tênis</p>
+                                    <p>Tamanho: 41</p>
+                                    <p>1 unid.</p>
+                                    <p>R$ 399,99</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-container">
+                                <img class="cart-item-img" src="assets/Images/Produtos/tenisw_.jpg" alt="">
+                                <div class="cart-item-text">
+                                    <p>Tênis</p>
+                                    <p>Tamanho: 41</p>
+                                    <p>1 unid.</p>
+                                    <p>R$ 399,99</p>
+                                </div>
+                            </div>
+                            <button class="cart-btn-buy">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim do arrinho de compras -->
             </ul>
 
             <div class="mobile-menu">
@@ -785,8 +830,8 @@
                                 <div class="image-content">
                                     <span class="overlay"></span>
                                     <div class="card-image">
-                                        <img src="./assets/Images/
-                                            alt="" class="card-img">
+                                        <img src="./assets/Images/"
+                                            alt="" class="card-img"/>
                                     </div>
                                 </div>
                                 <div class="card-content">
@@ -947,6 +992,8 @@
         <script src="assets/Scripts/slider3.js"></script>
         <!-- slider4 -->
         <script src="assets/Scripts/slider4.js"></script>
+        <!-- Cart -->
+        <script src="assets/Scripts/cart.js"></script>
         <!-- darkmode button -->
         <script src="assets/Scripts/8bits-mario-site.js"></script>
         <!-- Responsivity navbar-->
