@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Register</title>
+    <style>
+        body {
+            background-color: white; /* Cor de fundo branca */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-image: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url('static/Imagens/pngegg (3).png'); /* Sobreposição cinza com imagem de fundo */
+            background-size: cover; /* A imagem cobre toda a área do formulário */
+            text-align: center;
+            padding: 60px;
+            width: 400px;
+            box-shadow: 0px 4px 15px rgba(7, 7, 7, 0.7);
+            border-radius: 15px;
+        }
+
+        input {
+            background: white;
+            display: block;
+            margin: 10px auto;
+            width: 85%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input::placeholder {
+            color: #888;
+        }
+
+        label {
+            color: white;
+            margin-bottom: 15px;
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 12px 24px;
+            display: inline-block;
+            margin: 5px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: blueviolet;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: rgb(97, 15, 173);
+        }
+    </style>
+</head>
+<body>
+
+    <form action="{{ url_for('adicionar_usuario') }}" method="POST" onsubmit="return redirecionar()">
+        <label>Faça seu registro para continuar</label>
+        <input type="text" name="nome" placeholder="Nome" id="nomeInput"/>
+        <input type="text" name="cpf" placeholder="CPF" id="cpfInput"/>
+        <input type="email" name="email" placeholder="Usuário" />
+        <input type="password" name="password" placeholder="Senha"/>
+        <button type="submit">Registrar</button>
+        <div id="res"></div>
+    </form>
+
+    <script>
+        function redirecionar() {
+            var inputNome = document.querySelector('input[name="nome"]');
+            var valorNome = inputNome.value;
+
+            var inputCPF = document.querySelector('input[name="cpf"]');
+            var valorCPF = inputCPF.value;
+
+            var inputEmail = document.querySelector('input[name="email"]');
+            var valorEmail = inputEmail.value;
+
+            var inputPassword = document.querySelector('input[name="password"]');
+            var valorPassword = inputPassword.value;
+
+            if (valorNome && valorCPF && valorEmail && valorPassword) {
+                return true;
+            } else {
+                alert("Por favor, preencha os campos antes de entrar.");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -422,3 +422,45 @@ footer {
   align-items: left;
   margin-left: 20px;
 }
+
+
+/* AVALIAÇÕES */
+
+/* AVALIAÇÕES */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 10px;
+}
+
+#nameInput, #commentInput, #submitComment {
+  width: 15%; /* Largura consistente para os campos de entrada e botão */
+}
+
+#nameInput{
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Permite redimensionar verticalmente */
+} 
+
+#commentInput {
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+#submitComment {
+  padding: 10px;
+  background: lightgrey;
+  border: none;
+  cursor: pointer;
+}
+
+.comment {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}

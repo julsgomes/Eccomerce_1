@@ -1,0 +1,108 @@
+.cart-container {
+  width: 480px;
+  height: 100vh;
+  background: #fff;
+  transition: right 1s;
+  position: absolute;
+  right: -480px;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.cart-container.active {
+  right: 0px;
+}
+
+.cart-img {
+  cursor: pointer;
+}
+
+.cart-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-btn-close {
+  padding: 8px;
+  background: white;
+  border: 0px;
+  font-size: 15px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.cart-btn-close:hover {
+  background: lightgrey;
+}
+
+.cart-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  height: 90vh;
+}
+
+.cart-item-container {
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  padding: 30px 0px;
+  border-bottom: 1px solid lightgrey;
+  justify-content: start;
+  align-items: center;
+}
+
+.cart-item-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.remove-item {
+  cursor: pointer;
+  background: lightgrey;
+  border: none;
+  padding: 5px;
+}
+
+.cart-btn-buy {
+  padding: 15px 20px;
+  background: lightgrey;
+  border: 0px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: block; /* Para fazer o botão ocupar toda a largura */
+  text-align: center; /* Centralizar o texto dentro do botão */
+}
+
+.cart-btn-buy:hover {
+  background: grey;
+}
+
+.cart-products {
+  max-height: 70vh; /* Ajuste a altura máxima conforme necessário */
+  overflow-y: auto; /* Habilita a rolagem vertical quando necessário */
+}
+
+.cart-item-img img {
+  width: 100px; /* Definir a largura desejada para a imagem */
+  height: auto; /* Manter as proporções originais */
+  object-fit: cover; /* Cobrir o espaço disponível sem distorcer */
+  border-radius: 5px; /* Opcional: adicionar um arredondamento nas bordas */
+}
+
+
+.product-size, .product-quant {
+  width: 60px;
+  margin: 5px 0;
+  padding: 3px;
+  border: 1px solid #ccc;
+}

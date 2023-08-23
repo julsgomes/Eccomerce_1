@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrimeStore - Shoes</title>
+    <title>PrimeStore - Shoes - {{email_usuario}} </title>
     <link rel="icon" type="image/x-icon" href="assets/Images/Logo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,9 @@
     <!-- slider4 -->
     <link rel="stylesheet" href="assets/Styles/slider4.css">
 
+    <!-- Cart -->
+    <link rel="stylesheet" href="assets/Styles/cart.css">
+
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/Styles/glider.min.css">
@@ -33,6 +36,9 @@
 </head>
 
 <body>
+    <script>
+        var emailUsuario = "{{ email_usuario }}";  
+    </script>
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -51,9 +57,24 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
+
+                <!-- Carrinho de compras -->
                 <div class="cart">
-                    <img src="assets\Images\cart2.png" alt="Carrinho">
-                </div>
+                    <img class="cart-img" src="assets/Images/cart2.png" alt="Carrinho">
+                    <div class="cart-container">
+                        <div class="cart-top">
+                            <button class="cart-btn-close">X</button>
+                        </div>
+                        <div class="cart-body">
+                            <div class="cart-products">
+                                <!-- Os produtos do carrinho serão adicionados aqui -->
+                            </div>
+                            <button class="cart-btn-buy">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>               
+                <!-- Fim do carrinho de compras -->
+                
             </ul>
 
             <div class="mobile-menu">
@@ -76,7 +97,7 @@
                     <h1 class="frase3">Find comfort  for  your feet</h1>
                 </div>
                 <div class="image-container">
-                    <img id="girl2" src="assets\Images\nikegirl_2.jpg" alt="Imagem do personagem de vídeogames Sonic">
+                    <img id="girl2" src="assets\Images\nikegirl_2.jpg" alt="Imagem">
                 </div>
             </div>
         </div>
@@ -103,8 +124,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Air Force 1 '07 LX.png" class="p-img-front"
+                                            alt="Air Force 1 '07 LX">
                                     </a>
                                 </div>
                             </div>
@@ -115,10 +136,36 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title">Air Force 1 '07 LX</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$249,89</span>
+                                    <span class="p-price">R$889,99</span>
+                                    <a href="javascript:void(0)" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets\Images\Produtos\Tênis Nike Air Max Pulse Masculino.png" class="p-img-front"
+                                            alt="Tênis Nike Air Max Pulse Masculino">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tênis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title">Tênis Nike Air Max Pulse Masculino</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$1399,90</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
@@ -129,8 +176,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Tênis Nike Air Force 1 '07 Masculino.png" class="p-img-front"
+                                            alt="Tênis Nike Air Force 1 '07 Masculino">
                                     </a>
                                 </div>
                             </div>
@@ -141,10 +188,10 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title">Tênis Nike Air Force 1 '07 Masculino</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$159,90</span>
+                                    <span class="p-price">R$799,99</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
@@ -155,8 +202,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Tênis Slipstream LTH.png" class="p-img-front"
+                                            alt="Tênis Slipstream LTH">
                                     </a>
                                 </div>
                             </div>
@@ -167,10 +214,10 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title">Tênis Slipstream LTH</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$499,99</span>
+                                    <span class="p-price">R$549,90</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
@@ -181,34 +228,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$129,90</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product box -->
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Tênis Jordan MVP Masculino.png" class="p-img-front"
+                                            alt="Tênis Jordan MVP Masculino">
 
                                     </a>
                                 </div>
@@ -220,10 +241,10 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title">Tênis Jordan MVP Masculino</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$270,99</span>
+                                    <span class="p-price">R$1299,99</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
@@ -234,8 +255,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Nike SB Dunk Low.png" class="p-img-front"
+                                            alt="Nike SB Dunk Low">
                                     </a>
                                 </div>
                             </div>
@@ -246,16 +267,34 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title">Nike SB Dunk Low</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$349,99</span>
+                                    <span class="p-price">R$999,99</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    function InserirNoCarrinho(event){
+                        event.preventDefault();
+
+                        const data = new FormData();
+                        const name_product = 'Nike SB Dunk Low'
+                        data.append('nome', name_product);
+                        data.append('emailUsuario', emailUsuario);
+
+                        fetch('/AdicionaCarrinho', {
+                            method: 'POST',
+                            body: data
+                        })
+                    }
+
+                    document.getElementById('p-buy-btn').addEventListener('click', InserirNoCarrinho);
+
+                </script> 
 
             </section>
         </div>
@@ -268,34 +307,34 @@
                             <div class="card2 swiper-slide">
                                 <div class="imagecontent">
                                     <div class="cardimg">
-                                        <img src="./assets/Images/Personagens/img_1.jpg.png" alt="Personagem Mario" class="img">
+                                        <img src="assets\Images\Personagens\pessoa1.png" alt="Pessoa" class="img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="name2">Ex</h3>
+                                    <h3 class="name2">Actions speak louder than words</h3>
                                     <p class="textfont">Just do it!</p>
                                 </div>
                             </div>
                             <div class="card2 swiper-slide">
                                 <div class="imagecontent">
                                     <div class="cardimg">
-                                        <img src="./assets/Images/Personagens/img_1.jpg.png" alt="Personagem Kratos" class="img">
+                                        <img src="./assets/Images/Personagens/pessoa2.png" alt="Pessoa" class="img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="name2">Ex</h3>
-                                    <p class="textfont">Just do it!.</p>
+                                    <h3 class="name2">Believe in yourself</h3>
+                                    <p class="textfont">Have fun!.</p>
                                 </div>
                             </div>
                             <div class="card2 swiper-slide">
                                 <div class="imagecontent">
                                     <div class="cardimg">
-                                        <img src="./assets/Images/Personagens/img_1.jpg.png" alt="Personagem Obi-Wan-Kenobi do filme Star Wars" class="img">
+                                        <img src="./assets/Images/Personagens/pessoa3.png" alt="Pessoa" class="img">
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h3 class="name2">Ex</h3>
-                                    <p class="textfont">Just do it!.</p>
+                                    <h3 class="name2">The sky's the limit</h3>
+                                    <p class="textfont">Live it!.</p>
                                 </div>
                             </div>
                         </div>
@@ -327,8 +366,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Tênis NMR_R1.png" class="p-img-front"
+                                            alt="Tênis NMR_R1">
                                     </a>
                                 </div>
                             </div>
@@ -339,23 +378,47 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title" data-product-id="1" data-product-name="Nike SB Dunk Low">Tênis NMR_R1</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$299,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                    <span class="p-price">R$699,99</span>
+                                    <a href="javascript:void(0)" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets\Images\Produtos\Tênis RS-Z Reinvent Feminino.png" class="p-img-front"
+                                            alt="Tênis RS-Z Reinvent Feminino">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title" data-product-id="3" data-product-name="Nike SB Dunk Low">Tênis RS-Z Reinvent Feminino</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$599,99</span>
+                                    <a href="javascript:void(0)" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- product box -->
                         <div class="product-box">
                             <!-- img container -->
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
+                                        <img src="assets\Images\Produtos\Air Force 1 '07 LX.png" class="p-img-front"
+                                            alt="Air Force 1 '07 LX">
                                     </a>
                                 </div>
                             </div>
@@ -366,140 +429,13 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title" data-product-id="4" data-product-name="Nike SB Dunk Low">Air Force 1 '07 LX</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$159,90</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                    <span class="p-price">R$889,99</span>
+                                    <a href="javascript:void(0)" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
-                        </div>
-                        <!-- product box -->
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Nike</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$499,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$1196,00</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$3520,00</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$899,00</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Xbox Series">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Console</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$2249,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-
                         </div>
                         <!-- product box -->
                         <div class="product-box">
@@ -507,8 +443,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
+                                        <img src="assets\Images\Produtos\Tênis Nike Air Max Pulse Masculino.png" class="p-img-front"
+                                            alt="Tênis Nike Air Max Pulse Masculino">
                                     </a>
                                 </div>
                             </div>
@@ -516,62 +452,13 @@
                             <div class="p-box-text">
                                 <!-- category -->
                                 <div class="product-category">
-                                    <span>Game</span>
+                                    <span>Tênis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title" data-product-id="5" data-product-name="Nike SB Dunk Low">Tênis Nike Air Max Pulse Masculino</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$349,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Tenis">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$329,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" p-img-front alt="Tenis">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Eletrônico</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$249,89</span>
+                                    <span class="p-price">R$1399,90</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
@@ -582,8 +469,61 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg class="p-img-front"
-                                            alt="Nike">
+                                        <img src="assets\Images\Produtos\Tênis Nike Air Force 1 '07 Masculino.png" class="p-img-front"
+                                            alt="Tênis Nike Air Force 1 '07 Masculino">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title" data-product-id="6" data-product-name="Nike SB Dunk Low">Tênis Nike Air Force 1 '07 Masculino</a>
+                                
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$799,99</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets\Images\Produtos\Tênis Slipstream LTH.png" class="p-img-front"
+                                            alt="Tênis Slipstream LTH">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="p-box-text">
+                                <!-- category -->
+                                <div class="product-category">
+                                    <span>Tenis</span>
+                                </div>
+                                <!-- Title -->
+                                <a href="#" class="product-title" data-product-id="7" data-product-name="Nike SB Dunk Low">Tênis Slipstream LTH</a>
+                                <!-- price buy -->
+                                <div class="price-buy">
+                                    <span class="p-price">R$549,90</span>
+                                    <a href="#" class="p-buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product box -->
+                        <div class="product-box">
+                            <!-- img container -->
+                            <div class="p-img-container">
+                                <div class="p-img">
+                                    <a href="#">
+                                        <img src="assets\Images\Produtos\Tênis Jordan MVP Masculino.png" class="p-img-front"
+                                            alt="Tênis Jordan MVP Masculino">
 
                                     </a>
                                 </div>
@@ -595,60 +535,10 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title" data-product-id="8" data-product-name="Nike SB Dunk Low">Tênis Jordan MVP Masculino</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$270,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" p-img-front"
-                                            alt="Tenis">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="Tenis">
-                                    <span>Game</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$319,00</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$345,00</span>
+                                    <span class="p-price">R$1299,99</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
@@ -659,8 +549,8 @@
                             <div class="p-img-container">
                                 <div class="p-img">
                                     <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
+                                        <img src="assets\Images\Produtos\Nike SB Dunk Low.png" class="p-img-front"
+                                            alt="Nike SB Dunk Low">
                                     </a>
                                 </div>
                             </div>
@@ -671,201 +561,117 @@
                                     <span>Tenis</span>
                                 </div>
                                 <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
+                                <a href="#" class="product-title" data-product-id="9" data-product-name="Nike SB Dunk Low">Nike SB Dunk Low</a>
                                 <!-- price buy -->
                                 <div class="price-buy">
-                                    <span class="p-price">R$249,89</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Game</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$245,99</span>
-                                    <a href="#" class="p-buy-btn">Buy Now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- product box -->
-                        <div class="product-box">
-                            <!-- img container -->
-                            <div class="p-img-container">
-                                <div class="p-img">
-                                    <a href="#">
-                                        <img src="assets/Images/Produtos/tenisw_.jpg" class="p-img-front"
-                                            alt="Nike">
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- Text -->
-                            <div class="p-box-text">
-                                <!-- category -->
-                                <div class="product-category">
-                                    <span>Tenis</span>
-                                </div>
-                                <!-- Title -->
-                                <a href="#" class="product-title">Tenis</a>
-                                <!-- price buy -->
-                                <div class="price-buy">
-                                    <span class="p-price">R$129,90</span>
+                                    <span class="p-price">R$999,99</span>
                                     <a href="#" class="p-buy-btn">Buy Now</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    function InserirNoCarrinho(event){
+                        event.preventDefault();
+                        const productId = event.target.getAttribute('data-product-id');
+                        const data = new FormData();
+
+                        data.append('id', 3);
+                        data.append('emailUsuario', emailUsuario);
+
+                        fetch('/AdicionaCarrinho', {
+                            method: 'POST',
+                            body: data
+                        })
+                        .then(response => response.json())
+                        .then(result => {
+                            // Lidar com a resposta da API, se necessário
+                            console.log(`Produto ${productName} inserido no carrinho. Resposta da API:`, result);
+                        })
+                        .catch(error => {
+                            console.error('Erro na requisição:', error);
+                        })
+                    }
+
+                    const buyButtons = document.querySelectorAll('.p-buy-btn');
+                    buyButtons.forEach(button => {
+                        button.addEventListener('click', InserirNoCarrinho);
+                    });
+
+                </script> 
             </section>
         </div>
         <div class="fase4">
             <section aria-labelledby="avaliação">
                 <h2 class="titlefont4" id="avaliacao">Avaliações</h2>
+        
                 <div class="slider-container swiper">
-                    <div class="slide-content">
-                        <div class="card-wrapper swiper-wrapper">
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/" alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h2 class="name">Julia</h2>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">Emma</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">Lucas</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/
-                                            alt="" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">André</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">Fernanda</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">Bruna</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">Samuel</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">John</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide">
-                                <div class="image-content">
-                                    <span class="overlay"></span>
-                                    <div class="card-image">
-                                        <img src="./assets/Images/"
-                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <h3 class="name">Gabriel</h3>
-                                    <p class="textfont"></p>
-                                </div>
-                            </div>
-
-                        </div>
+                    <!-- Comentários existentes -->
+                    <div class="comment-list">
+                        <!-- Comentários serão adicionados aqui -->
                     </div>
-
-                    <div class="swiper-button-next swiper-navBtn"></div>
-                    <div class="swiper-button-prev swiper-navBtn"></div>
-                    <div class="swiper-pagination"></div>
+                    <!-- Resto do seu código existente -->
                 </div>
+
+                <!-- Formulário de Comentários -->
+                <div class="comment-form">
+                    <input type="text" id="nameInput" placeholder="Nome do produto" required /> <!-- Campo de nome -->
+                    <textarea id="commentInput" placeholder="Deixe seu comentário..." required></textarea>
+                    <button id="submitComment">Enviar</button>
+                </div>
+                <script>
+                    function LeComentario(){
+                        fetch('/CarregaAvaliacoes', {
+                            method: 'GET'
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            const commentList = document.querySelector('.comment-list');
+                            
+                            data.forEach(comment => {
+                                const commentElement = document.createElement('div');
+                                commentElement.classList.add('comment');
+                                commentElement.innerHTML = `<p>${comment.text}</p>`; // Substitua 'text' pelo nome do campo de texto do comentário no seu objeto JSON
+                                commentList.appendChild(commentElement);
+                            });
+                        })
+                        .catch(error => {
+                            console.error('Erro ao carregar comentários:', error);
+                        });
+                    
+                    }
+
+                    function CriaRelatorio(){
+                        const productName = document.getElementById('nameInput').value;
+                        const comment = document.getElementById('commentInput').value;
+
+                        const data = new FormData();
+                        data.append('nomeProduto', productName);
+                        data.append('comentario', comment);
+                        data.append('emailUsuario', emailUsuario);
+
+                        fetch('/InsereAvaliacao', {
+                            method: 'POST',
+                            body: data
+                        })
+                        .then(response => response.json())
+                        .then(result => {
+                            console.log('Resposta da API:', result);
+                            // Aqui você pode fazer algo com a resposta, se necessário
+                        })
+                        .catch(error => {
+                            console.error('Erro na requisição:', error);
+                        });
+                }
+
+                document.getElementById('submitComment').addEventListener('click', CriaRelatorio);
+                
+                </script>
             </section>
         </div>
+        
+          
         <div class="fase5">
             <section  aria-labelledby="FaleConosco">
                 <h2 class="titlefont5" id="FaleConosco">Fale conosco</h2>
@@ -944,6 +750,10 @@
         <script src="assets/Scripts/slider3.js"></script>
         <!-- slider4 -->
         <script src="assets/Scripts/slider4.js"></script>
+
+        <!-- Cart -->
+        <script src="assets/Scripts/cart.js"></script>
+
         <!-- darkmode button -->
         <script src="assets/Scripts/8bits-mario-site.js"></script>
         <!-- Responsivity navbar-->
