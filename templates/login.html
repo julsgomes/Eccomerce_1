@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio - Register</title>
+    <title>Inicio - Login</title>
     <style>
         body {
             background-color: white; /* Cor de fundo branca */
@@ -18,8 +18,8 @@
             background-image: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url('static/Imagens/pngegg (3).png'); /* Sobreposição cinza com imagem de fundo */
             background-size: cover; /* A imagem cobre toda a área do formulário */
             text-align: center;
-            padding: 60px;
-            width: 400px;
+            padding: 60px; /* Aumento do padding */
+            width: 400px; /* Aumento da largura */
             box-shadow: 0px 4px 15px rgba(7, 7, 7, 0.7);
             border-radius: 15px;
         }
@@ -29,9 +29,17 @@
             display: block;
             margin: 10px auto;
             width: 85%;
-            padding: 12px;
+            padding: 12px; /* Aumento do padding */
             border: 1px solid #ccc;
             border-radius: 8px;
+        }
+
+        input[name="email"] {
+            margin-top: 25px; /* Aumento da distância entre o título e a caixa de usuário */
+        }
+
+        input[name="password"] {
+            margin-bottom: 25px; /* Aumento da distância entre a caixa de senha e os botões */
         }
 
         input::placeholder {
@@ -42,36 +50,49 @@
             color: white;
             margin-bottom: 15px;
             display: block;
-            font-size: 20px;
+            font-size: 20px; /* Aumento do tamanho da fonte */
             font-weight: bold;
         }
 
         button {
-            padding: 12px 24px;
-            display: inline-block;
-            margin: 5px;
+            padding: 12px 24px; /* Botões um pouco maiores */
+            display: inline-block; /* Centralização horizontal */
+            margin: 5px; /* Espaçamento entre botões */
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 16px;
-            background-color: blueviolet;
-            color: white;
-            transition: background-color 0.3s;
+            font-size: 16px; /* Tamanho da fonte dos botões */
+            transition: background-color 0.3s; /* Efeito de transição */
         }
 
-        button:hover {
-            background-color: rgb(97, 15, 173);
+        #login-button {
+            background-color: rgb(189, 31, 31); /* Cor vermelha para o botão de login */
+            color: white;
+        }
+
+        #create-account-button {
+            background-color: rgb(72, 72, 230); /* Cor azul para o botão de criar conta */
+            color: white;
+        }
+
+        /* Efeito hover nos botões */
+        #login-button:hover,
+        #create-account-button:hover {
+            background-color: rgb(185, 12, 12);
+        }
+        #create-account-button:hover {
+            background-color: rgba(29, 33, 255, 0.993);
         }
     </style>
 </head>
 <body>
 
-    <form action="{{ url_for('verificar_usuario') }}" method="post" onsubmit="return redirecionar()">
-        <label>Faça seu registro para continuar</label>
+    <form action="{{ url_for('verificar_usuario') }}" method="POST" onsubmit="return entrar()">
+        <label>Faça login para continuar</label>
         <input type="email" name="email" placeholder="Usuário" />
         <input type="password" name="password" placeholder="Senha"/>
-        <button type="submit">Logar</button>
-        <div id="res"></div>
+        <button type="submit" id="login-button">Logar</button>
+        <button type="button" id="create-account-button" onclick="clicar()">Criar Conta</button>
     </form>
 
     <script>
@@ -88,9 +109,11 @@
                 alert("Por favor, preencha os campos antes de entrar.");
             }
         }
+
+        function clicar() {
+            window.location.href = "http://127.0.0.1:5000/Create";
+        }
     </script>
-    <script>
-        function verificar_usuario()
-    </script>
+
 </body>
 </html>
