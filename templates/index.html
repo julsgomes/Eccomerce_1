@@ -4,41 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>PrimeStore - Shoes - {{email_usuario}} </title>
+=======
+    <title>PrimeStore - Shoes - {{nome_usuario}}</title>
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
     <link rel="icon" type="image/x-icon" href="assets/Images/Logo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
-
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/Styles/Ecommerce.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles/Ecommerce.css') }}">
     <!-- slider1 -->
-    <link rel="stylesheet" href="assets/Styles/slider1.css">
+    <link rel="stylesheet" href="../assets/Styles/slider1.css">
     <!-- slider2 -->
-    <link rel="stylesheet" href="assets/Styles/slider2.css">
+    <link rel="stylesheet" href="../assets/Styles/slider2.css">
     <!-- slider3 -->
-    <link rel="stylesheet" href="assets/Styles/slider3.css">
+    <link rel="stylesheet" href="../assets/Styles/slider3.css">
     <!-- slider4 -->
-    <link rel="stylesheet" href="assets/Styles/slider4.css">
+    <link rel="stylesheet" href="../assets/Styles/slider4.css">
 
     <!-- Cart -->
     <link rel="stylesheet" href="assets/Styles/cart.css">
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="assets/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/Styles/glider.min.css">
+    <link rel="stylesheet" href="../assets/Styles/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/Styles/glider.min.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/Styles/cart.css">
 
     <!-- Form CSS -->
     <link rel="stylesheet" href="assets/Styles/form.css">
 </head>
-
 <body>
     <script>
+<<<<<<< HEAD
         var emailUsuario = "{{ email_usuario }}";  
     </script>
+=======
+        var nomeUsuario = "{{ nome_usuario }}";
+
+        
+    </script>
+
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -57,6 +69,7 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
+<<<<<<< HEAD
 
                 <!-- Carrinho de compras -->
                 <div class="cart">
@@ -68,13 +81,57 @@
                         <div class="cart-body">
                             <div class="cart-products">
                                 <!-- Os produtos do carrinho serão adicionados aqui -->
+=======
+                <!-- Carrinho de compras -->
+                </div>
+                <div class="cart">
+                    <img class="cart-img" src="assets\Images\cart2.png" alt="Carrinho">
+
+                    <div class="cart-container">
+                        <div class="cart-top">
+                            <p>SEU CARRINHO (3)</p>
+                            <button class="cart-btn-close">X</button>
+                        </div>
+                        <div class="cart-body">
+                            <div class="cart-item-container">
+                                <img class="cart-item-img" src="assets/Images/Produtos/tenisw_.jpg" alt="">
+                                <div class="cart-item-text">
+                                    <p>Tênis</p>
+                                    <p>Tamanho: 41</p>
+                                    <p>1 unid.</p>
+                                    <p>R$ 399,99</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-container">
+                                <img class="cart-item-img" src="assets/Images/Produtos/tenisw_.jpg" alt="">
+                                <div class="cart-item-text">
+                                    <p>Tênis</p>
+                                    <p>Tamanho: 41</p>
+                                    <p>1 unid.</p>
+                                    <p>R$ 399,99</p>
+                                </div>
+                            </div>
+                            <div class="cart-item-container">
+                                <img class="cart-item-img" src="assets/Images/Produtos/tenisw_.jpg" alt="">
+                                <div class="cart-item-text">
+                                    <p>Tênis</p>
+                                    <p>Tamanho: 41</p>
+                                    <p>1 unid.</p>
+                                    <p>R$ 399,99</p>
+                                </div>
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
                             </div>
                             <button class="cart-btn-buy">Finalizar Compra</button>
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div>               
                 <!-- Fim do carrinho de compras -->
                 
+=======
+                </div>
+                <!-- Fim do arrinho de compras -->
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
             </ul>
 
             <div class="mobile-menu">
@@ -607,9 +664,132 @@
                 <h2 class="titlefont4" id="avaliacao">Avaliações</h2>
         
                 <div class="slider-container swiper">
+<<<<<<< HEAD
                     <!-- Comentários existentes -->
                     <div class="comment-list">
                         <!-- Comentários serão adicionados aqui -->
+=======
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">Julia</h2>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Emma</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Lucas</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="" class="card-img"/>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">André</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Fernanda</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Bruna</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Samuel</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">John</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="./assets/Images/"
+                                            alt="Imagem de uma pessoa aletórioa" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h3 class="name">Gabriel</h3>
+                                    <p class="textfont"></p>
+                                </div>
+                            </div>
+
+                        </div>
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
                     </div>
                     <!-- Resto do seu código existente -->
                 </div>
@@ -750,10 +930,15 @@
         <script src="assets/Scripts/slider3.js"></script>
         <!-- slider4 -->
         <script src="assets/Scripts/slider4.js"></script>
+<<<<<<< HEAD
 
         <!-- Cart -->
         <script src="assets/Scripts/cart.js"></script>
 
+=======
+        <!-- Cart -->
+        <script src="assets/Scripts/cart.js"></script>
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
         <!-- darkmode button -->
         <script src="assets/Scripts/8bits-mario-site.js"></script>
         <!-- Responsivity navbar-->

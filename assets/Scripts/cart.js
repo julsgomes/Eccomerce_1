@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let cart_img = document.querySelector(".cart-img");
 let cart_container = document.querySelector(".cart-container");
 let cart_btn_close = document.querySelector(".cart-btn-close");
@@ -119,3 +120,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Adicionar evento de clique ao botão de envio
   submitCommentBtn.addEventListener("click", addComment);
 });
+=======
+let cart_img = document.querySelector(".cart-img")
+let cart_container = document.querySelector(".cart-container")
+let cart_btn_close = document.querySelector(".cart-btn-close")
+
+cart_img.onclick = () => {
+  cart_container.classList.toggle("active")
+}
+
+cart_btn_close.onclick = () => {
+  cart_container.classList.toggle("active")
+}
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752

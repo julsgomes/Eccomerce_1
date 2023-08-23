@@ -8,10 +8,17 @@
   top: 0;
   z-index: 100;
   overflow: hidden;
+<<<<<<< HEAD
   padding: 25px;
 }
 
 .cart-container.active {
+=======
+  padding: 25px
+}
+
+.cart-container.active  {
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
   right: 0px;
 }
 
@@ -55,6 +62,16 @@
   border-bottom: 1px solid lightgrey;
   justify-content: start;
   align-items: center;
+<<<<<<< HEAD
+=======
+
+}
+
+.cart-item-img {
+  display: flex;
+  height: 100px;
+  width: 100px;
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
 }
 
 .cart-item-text {
@@ -66,6 +83,7 @@
   gap: 10px;
 }
 
+<<<<<<< HEAD
 .remove-item {
   cursor: pointer;
   background: lightgrey;
@@ -74,17 +92,25 @@
 }
 
 .cart-btn-buy {
+=======
+.cart-btn-buy {
+  align-self: center;
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
   padding: 15px 20px;
   background: lightgrey;
   border: 0px;
   cursor: pointer;
   margin-top: 20px;
+<<<<<<< HEAD
   display: block; /* Para fazer o botão ocupar toda a largura */
   text-align: center; /* Centralizar o texto dentro do botão */
+=======
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
 }
 
 .cart-btn-buy:hover {
   background: grey;
+<<<<<<< HEAD
 }
 
 .cart-products {
@@ -106,3 +132,6 @@
   padding: 3px;
   border: 1px solid #ccc;
 }
+=======
+}
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752

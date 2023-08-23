@@ -2,6 +2,7 @@ from bd import mysql
 from flaskext.mysql import MySQL
 from flask import Flask, jsonify, render_template, request, redirect, url_for
 
+<<<<<<< HEAD
 app = Flask(__name__, static_url_path='/assets', static_folder='assets')   
 
 #instanciar
@@ -15,6 +16,22 @@ def Login():
 
 @app.route('/Create')                                               
 def Register():                                                     
+=======
+app = Flask(__name__, static_url_path='/assets', static_folder='assets')
+nome_usuario = ''
+
+#instanciar
+@app.route('/')                                                     #Criando o Rout
+def homepage():                                                     #Criando a Função
+    return render_template("login.html")
+
+@app.route('/Login')                                                #Criando o Rout
+def Login():                                                #Criando a Função
+    return render_template("login.html")
+
+@app.route('/Create')                                               #Criando o Rout
+def Register():                                             #Criando a Função
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
     return render_template("create.html")
 
 
@@ -33,7 +50,11 @@ def adicionar_usuario():
             with mysql.cursor() as cur:
                 cur.execute('INSERT INTO Usuario (nome, email, senha, cpf) VALUES (%s,%s,%s,%s)', (nome, email, senha, cpf))
                 cur.connection.commit()
+<<<<<<< HEAD
                 mysql.commit()
+=======
+                
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
                 return render_template("login.html")
         else:
             return render_template("create.html")
@@ -56,6 +77,7 @@ def verificar_usuario():
                     if(resultado[0][2] != senha):
                         return render_template("login.html")
                     else:
+<<<<<<< HEAD
                         return render_template("index.html", email_usuario=resultado[0][0])
 
         except Exception as e:
@@ -132,6 +154,13 @@ def carrega_itens_carrinho():
         
     except Exception as e:
         return render_template("index.html")
+=======
+                        nome_usuario = resultado[0][1]
+                        return render_template("index.html", nome_usuario = nome_usuario)
+
+        except Exception as e:
+            return render_template("login.html")
+>>>>>>> 959edd8bb8c6df61e918163d0b0ec24b6905a752
 
 
 if(__name__ == "__main__"):
