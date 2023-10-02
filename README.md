@@ -26,9 +26,6 @@ Este projeto é uma implementação de um site de e-commerce especializado em t�
 - `bd.py`: Arquivo responsável pelo banco de dados.
 - `assets/`: Contém ativos diversos.
 - `Images/`: Contém imagens utilizadas no projeto.
-- `Clientes/`: Imagens relacionadas aos clientes.
-- `Personagens/`: Imagens de personagens para ilustração.
-- `Produtos/`: Imagens dos produtos à venda.
 - `Scripts/`: Contém os scripts JavaScript.
 - `Styles/`: Contém as folhas de estilo CSS.
 - `templates/`: Contém os arquivos HTML.
