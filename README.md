@@ -8,7 +8,6 @@
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ## Descrição
 
